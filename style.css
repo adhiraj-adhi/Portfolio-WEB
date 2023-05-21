@@ -1,0 +1,568 @@
+/* #be7c68 = light brown
+#131516 = dark black
+#707c84 = light gray
+#f5f5f5 = white background and text
+#f3efee = ligh pinkish background
+#bf816a = brown text
+
+for consideration :-
+#c99484 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --brown-text: #bf816a;
+    --pinkish-background: #f3efee;
+    --white: #f5f5f5;
+    --light-gray: #707c84;
+    --dark-black: #131516;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    padding: 1.6rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    background: var(--white);
+    transition: 0.3s;
+}
+
+.stickyNav {
+    position: sticky;
+    top: 0;
+    padding: 1rem 3rem;
+    z-index: 100;
+    background: var(--dark-black);
+}
+
+.stickyNav .logo__container a,
+.stickyNav ul li a {
+    color: var(--white);
+}
+
+header .logo__container a {
+    color: var(--dark-black);
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-right: 1.6rem;
+}
+
+header nav ul li a {
+    color: var(--dark-black);
+}
+
+header nav ul li a:hover {
+    color: var(--brown-text);
+}
+
+@media screen and (max-width: 650px) {
+    nav{
+        display: none;
+    }
+}
+
+.main-container {
+    width: 100%;
+    padding: 3rem 4.5rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome {
+    color: var(--brown-text);
+    position: relative;
+}
+
+.content {
+    width: 50%;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: var(--dark-black);
+}
+
+.content h2 {
+    font-weight: 500;
+    color: var(--dark-black);
+    margin-bottom: 1rem;
+}
+
+.content .info {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+}
+
+.buttons a {
+    width: fit-content;
+    padding: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--brown-text);
+    color: var(--brown-text);
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.knowMore a {
+    width: fit-content;
+    padding: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--brown-text);
+    color: var(--brown-text);
+    color: #131516;
+}
+
+.myImage img {
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px var(--light-gray);
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
+
+/* =============================== about designing starts ================================= */
+#about {
+    width: 100%;
+    padding: 3rem 4.5rem;
+}
+
+#about h3 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#about h3 span {
+    color: var(--brown-text);
+}
+
+.currentWork {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+    color: var(--light-gray);
+}
+
+.basicInfo {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+
+.basicInfo1,
+.basicInfo2 {
+    width: 50%;
+}
+
+.forDesign {
+    margin-bottom: 1rem;
+}
+
+.forDesign span {
+    padding-right: 1rem;
+}
+
+.mySkillAnchor a {
+    background-color: var(--brown-text);
+    padding: 0.4rem;
+    border-radius: 6px;
+    color: var(--white);
+}
+
+
+
+
+
+/* =============================== skills designing starts ================================= */
+#skills {
+    width: 100%;
+    padding: 3rem 4.5rem;
+}
+
+#skills h2 {
+    margin-bottom: 2rem;
+}
+
+.skills-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-wrapper .skill {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.skill .fieldSkill {
+    display: flex;
+    align-items: center;
+}
+
+.skill .fieldSkill .box {
+    height: 65px;
+    width: 65px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    margin-right: 20px;
+
+    box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill .fieldSkill .skillField {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.skill .skillName {
+    padding: 1rem;
+}
+
+.skill .skillName .nameOfSkill {
+    padding-left: 3.5rem;
+    color: var(--light-gray);
+}
+
+@media screen and (max-width:550px) {
+    .skills-wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-wrapper .skill {
+        width: 100%;
+    }
+}
+
+
+/* =============================== projects designing starts ================================= */
+#projects {
+    width: 100%;
+    padding: 3rem 4.5rem;
+    background: var(--pinkish-background);
+}
+
+#projects h2 {
+    margin-bottom: 2rem;
+}
+
+.slider-container {
+    max-width: 1200px;
+    width: 80%;
+    height: 425px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.slider-container .sliders {
+    flex: 0 0 100%;
+    height: 100%;
+    transition: 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.slider-container .sliders .image {
+    width: 45%;
+    height: 60%;
+}
+
+.slider-container .sliders .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.slider-container .sliders .aboutProject {
+    width: 45%;
+    height: 100%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider-container .sliders .aboutProject .project-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.slider-container .sliders .aboutProject p {
+    font-size: 0.8rem;
+    color: var(--light-gray);
+}
+
+.slider-container .sliders .aboutProject a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 0.7rem;
+    width: fit-content;
+    background: var(--brown-text);
+    padding: 0.55rem;
+    border-radius: 10px;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background: var(--brown-text);
+}
+
+.slider-container .prev {
+    left: 0;
+}
+
+.slider-container .next {
+    right: 0;
+}
+
+@media screen and (max-width : 600px) {
+    .slider-container {
+        height: max-content;
+    }
+
+    .slider-container .sliders {
+        flex-direction: column;
+    }
+
+    .slider-container .sliders .image {
+        height: 200px;
+    }
+
+    .slider-container .sliders .image,
+    .slider-container .sliders .aboutProject {
+        width: 100%;
+    }
+
+    .slider-container button {
+        top: 35%;
+        transform: translateY(-35%);
+    }
+
+}
+
+
+/* =============================== contact designing starts ================================= */
+#contact {
+    width: 100%;
+    padding: 3rem 4.5rem;
+    padding-bottom: 0;
+    background: var(--pinkish-background);
+}
+
+.contacts {
+    width: 100%;
+    min-height: 190px;
+    /* background: #0b192f; */
+    background: var(--brown-text);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.contacts .contactDetails {
+    width: 23%;
+    height: 175px;
+    /* background: #ffffff; */
+    background: var(--white);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    transform: translateY(40%);
+}
+
+.contacts .contactDetails a {
+    text-decoration: none;
+    color: var(--brown-text);
+    transition: 0.5s;
+}
+
+.contacts .contactDetails a:hover {
+    color: black;
+}
+
+.formsAndDetails {
+    width: 100%;
+    min-height: 350px;
+    /* ===============================================================================*/
+    /* background: #ebeaea; */
+
+    display: flex;
+}
+
+.formsAndDetails .myForm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: calc((175px +7.5px) * 0.5);
+    /* here instead of 0.4 we took 0.5 for better gaping */
+
+    /* border: 2px solid red; */
+}
+
+
+.formsAndDetails .myForm form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formsAndDetails input,
+.formsAndDetails textarea {
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 0.66rem;
+    margin-bottom: 1.25rem;
+    resize: none;
+}
+
+.formsAndDetails input[type="submit"] {
+    /* background: #0b192f; */
+    background: var(--brown-text);
+    /* border: 1px solid var(--brown-text); */
+    color: var(--white);
+}
+
+.formsAndDetails .message {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc((175px +7.5px) * 0.65);
+
+    /* border: 2px solid red; */
+}
+
+.formsAndDetails .message p {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #0b192f;
+}
+
+.formsAndDetails .message .messageForVisitor {
+    font-size: 1rem;
+    padding: 2rem;
+    font-weight: lighter;
+    color: #0b192f;
+}
+
+.formsAndDetails .message .messageForVisitor a {
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.formsAndDetails .message .messageForVisitor a i {
+    transform: scale(1.7);
+}
+
+.formsAndDetails .message .messageForVisitor a i:hover {
+    transform: translateY(-5px) scale(1.8);
+}
+
+@media screen and (max-width:550px) {
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts .contactDetails {
+        width: 60%;
+        margin-bottom: 1.2rem;
+        transform: translate(0);
+    }
+
+    .contacts .contactDetails:first-child {
+        margin-top: 1.2rem;
+    }
+
+    .formsAndDetails {
+        flex-direction: column;
+    }
+
+    /* .formsAndDetails .myForm {
+        width: 100%;
+    } */
+    .formsAndDetails .myForm form {
+        width: 100%;
+    }
+
+    .formsAndDetails input,
+    .formsAndDetails textarea {
+        width: 60%;
+    }
+
+    .formsAndDetails .message {
+        width: 100%;
+    }
+
+    .formsAndDetails .messageForVisitor {
+        width: 80%;
+    }
+}
