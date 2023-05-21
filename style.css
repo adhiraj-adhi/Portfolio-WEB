@@ -154,6 +154,13 @@ header nav ul li a:hover {
         width: 100%;
         margin-bottom: 5rem;
     }
+    .myImage{
+        width: 100%;
+    }
+    ..myImage img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
